@@ -1,42 +1,42 @@
 catagories = [
     {
-        "catagory": "Healthcare"
+        "catagory": "Healthcare",
         "questions": hquestions.js
     },
     {
-        "catagory": "Education"
+        "catagory": "Education",
         "questions": edquestions.js
     },
     {
-        "catagory": "Social"
+        "catagory": "Social",
         "questions": squestions.js
     },
     {
-        "catagory": "Constitution"
+        "catagory": "Constitution",
         "questions": cquestions.js
     },
     {
-        "catagory": "Foreign Relations"
+        "catagory": "Foreign Relations",
         "questions": fquestions.js
     },
     {
-        "catagory": "Environment"
+        "catagory": "Environment",
         "questions": enquestions.js
     },
     {
-        "catagory": "Economy"
+        "catagory": "Economy",
         "questions": ecquestions.js
     },
     {
-        "catagory": "Immigration"
+        "catagory": "Immigration",
         "questions": iquestions.js
     },
     {
-        "catagory": "Transport"
+        "catagory": "Transport",
         "questions": tquestions.js
     },
     {
-        "catagory": "Defence"
+        "catagory": "Defence",
         "questions": dquestions.js
     }
 ];
