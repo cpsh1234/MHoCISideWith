@@ -14,61 +14,45 @@
 </script>
 
 <body>
-<h1>8values</h1>
+<h1>MHoC ISideWith</h1>
 <hr>
 
 <h1>Results</h1>
 
-<h2>Economic Axis: <span class="weight-300" id="economic-label"></span></h2>
+<h2>Labour Axis: <span class="weight-300" id="labour-label"></span></h2>
 <div class="axis">
-    <img id="img-equality" src="value_images/equality.svg" height="128pt"/>
-    <div class="bar equality" id="bar-equality"><div class="text-wrapper" id="equality"></div></div>
-    <div class="bar wealth" id="bar-wealth"><div class="text-wrapper" id="wealth"></div></div>
-    <img id="img-wealth" src="value_images/wealth.svg" height="128pt"/>
+    <img id="img-lab" src="value_images/lab.png" height="128pt"/>
+    <div class="bar labour" id="bar-labour"><div class="text-wrapper" id="labour"></div></div>
+    <div class="bar nlabour" id="bar-nlabour"><div class="text-wrapper" id="nlabour"></div></div>
 </div>
-<h2>Diplomatic Axis: <span class="weight-300" id="diplomatic-label"></span></h2>
+<h2>Conservative Axis: <span class="weight-300" id="conservative-label"></span></h2>
 <div class="axis">
-    <img id="img-might" src="value_images/might.svg" height="128pt"/>
-    <div class="bar might" id="bar-might"><div class="text-wrapper" id="might"></div></div>
-    <div class="bar peace" id="bar-peace"><div class="text-wrapper" id="peace"></div></div>
-    <img id="img-peace" src="value_images/peace.svg" height="128pt"/>
+    <img id="img-con" src="value_images/cons.png" height="128pt"/>
+    <div class="bar conservative" id="bar-conservative"><div class="text-wrapper" id="conservative"></div></div>
+    <div class="bar nconservative" id="bar-nconservative"><div class="text-wrapper" id="nconservative"></div></div>
 </div>
-<h2>Civil Axis: <span class="weight-300" id="state-label"></span></h2>
+<h2>Lib Dem Axis: <span class="weight-300" id="ld-label"></span></h2>
 <div class="axis">
-    <img id="img-liberty" src="value_images/liberty.svg" height="128pt"/>
-    <div class="bar liberty" id="bar-liberty"><div class="text-wrapper" id="liberty"></div></div>
-    <div class="bar authority" id="bar-authority"><div class="text-wrapper" id="authority"></div></div>
-    <img id="img-authority" src="value_images/authority.svg" height="128pt"/>
+    <img id="img-ld" src="value_images/ld.png" height="128pt"/>
+    <div class="bar libdem" id="bar-libdem"><div class="text-wrapper" id="libdem"></div></div>
+    <div class="bar nlibdem" id="bar-nlibdem"><div class="text-wrapper" id="nlibdem"></div></div>
 </div>
-<h2>Societal Axis: <span class="weight-300" id="society-label"></span></h2>
+<h2>Libertarian Axis: <span class="weight-300" id="lib-label"></span></h2>
 <div class="axis">
-    <img id="img-tradition" src="value_images/tradition.svg" height="128pt"/>
-    <div class="bar tradition" id="bar-tradition"><div class="text-wrapper" id="tradition"></div></div>
-    <div class="bar progress" id="bar-progress"><div class="text-wrapper" id="progress"></div></div>
-    <img id="img-progress" src="value_images/progress.svg" height="128pt"/>
+    <img id="img-lib" src="value_images/lib.png" height="128pt"/>
+    <div class="bar libertarian" id="bar-libertarian"><div class="text-wrapper" id="libertarian"></div></div>
+    <div class="bar nlibertarian" id="bar-nlibertarian"><div class="text-wrapper" id="libertarian"></div></div>
 </div>
-<h2>Closest Match: <span class="weight-300" id="ideology-label"></span></h2>
-<p>Ideological matching is a work in progress, and is much less accurate than the values and axes.</p>
-<p>You can send these results by copying and pasting the URL at the top of the page or using the image below. Think your matched ideology was wrong? Want to help us calibrate the test? Send the results along with your political ideology to us at eightvalues@gmail.com, or send us any comments, questions, or criticism. </p>
+<h2>Citizen Axis: <span class="weight-300" id="cit-label"></span></h2>
+<div class="axis">
+    <img id="img-cit" src="value_images/cit.png" height="128pt"/>
+    <div class="bar citizen" id="bar-citizen"><div class="text-wrapper" id="citizen"></div></div>
+    <div class="bar ncitizen" id="bar-ncitizen"><div class="text-wrapper" id="ncitizen"></div></div>
+</div>
 <hr/>
 <img src="" id="banner">
 <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br>
-<!-- Website visit statistics - no personal information is collected! -->
-<script type="text/javascript">
-var sc_project=11325211;
-var sc_invisible=1;
-var sc_security="fd9f0659";
-var scJsHost = (("https:" == document.location.protocol) ?
-"https://secure." : "http://www.");
-document.write("<sc"+"ript type='text/javascript' src='" +
-scJsHost+
-"statcounter.com/counter/counter.js'></"+"script>");
-</script>
-<noscript><div class="statcounter"><a title="web stats"
-href="http://statcounter.com/" target="_blank"><img
-class="statcounter"
-src="//c.statcounter.com/11325211/0/fd9f0659/1/" alt="web
-stats"></a></div></noscript>
+
 <script>
     function getQueryVariable(variable)
     {
@@ -91,60 +75,49 @@ stats"></a></div></noscript>
         }
     }
 
-    econArray = ["Communist","Socialist","Social","Centrist","Market","Capitalist","Laissez-Faire"]
-    diplArray = ["Cosmopolitan","Internationalist","Peaceful","Balanced","Patriotic","Nationalist","Chauvinist"]
-    govtArray = ["Anarchist","Libertarian","Liberal","Moderate","Statist","Authoritarian","Totalitarian"]
-    sctyArray = ["Revolutionary","Very Progressive","Progressive","Neutral","Traditional","Very Traditional","Reactionary"]
+    labArray = ["Arch-Labour","Labour leaning","Swinging labour","Probably not Labour","Anti-Labour"]
+    conArray = ["Arch-Tory","Tory leaning","Swinging Conservative","Probably not a Tory","Anti-Tory"]
+    ldArray = ["Arch-Lib Dem","Lib Dem leaning","Swinging Lib Dem","Probably not a Lib Dem","Anti-Lib Dem"]
+    libArray = ["Arch-Libertarian","Libertarian leaning","Swinging Libertarian","Probably not a Libertarian","Anti-Libertarian"]
+    citArray = ["Arch-Citizen","Citizen leaning","Swinging Citizen","Probably not a Citizen","Anti-Citizen"]
 
     function setLabel(val,ary) {
         if (val > 100) { return "" } else
         if (val > 90) { return ary[0] } else
         if (val > 75) { return ary[1] } else
-        if (val > 60) { return ary[2] } else
-        if (val >= 40) { return ary[3] } else
-        if (val >= 25) { return ary[4] } else
-        if (val >= 10) { return ary[5] } else
-        if (val >= 0) { return ary[6] } else
+        if (val > 50) { return ary[2] } else
+        if (val >= 25) { return ary[3] } else
+        if (val >= 0) { return ary[4] } else
         	{return ""}
     }
 
-    equality  = getQueryVariable("e")
-    peace     = getQueryVariable("d")
-    liberty   = getQueryVariable("g")
-    progress  = getQueryVariable("s")
-    wealth    = (100 - equality).toFixed(1)
-    might     = (100 - peace   ).toFixed(1)
-    authority = (100 - liberty ).toFixed(1)
-    tradition = (100 - progress).toFixed(1)
+    labour  		= getQueryVariable("a")
+    conservative    = getQueryVariable("b")
+    libdem   		= getQueryVariable("c")
+    libertarian 	= getQueryVariable("d")
+    citizen    		= getQueryVariable("e")
+    nlabour     	= (100 - labour   ).toFixed(1)
+    nconservative 	= (100 - conservative ).toFixed(1)
+    nlibdem 		= (100 - libdem).toFixed(1)
+    nlibertarian 	= (100 - libertarian ).toFixed(1)
+    ncitizen 		= (100 - citizen).toFixed(1)
 
-    setBarValue("equality", equality)
-    setBarValue("wealth", wealth)
-    setBarValue("peace", peace)
-    setBarValue("might", might)
-    setBarValue("liberty", liberty)
-    setBarValue("authority", authority)
-    setBarValue("progress", progress)
-    setBarValue("tradition", tradition)
+    setBarValue("Labour", labour)
+    setBarValue("Conservative", conservative)
+    setBarValue("Lib Dem", libdem)
+    setBarValue("Libertarian", libertarian)
+    setBarValue("Citizen", citizen)
+    setBarValue("nLabour", nlabour)
+    setBarValue("nConservative", nconservative)
+    setBarValue("nLibdem", nlibdem)
+    setBarValue("nLibertarian", nlibertarian)
+    setBarValue("nCitizen", ncitizen)
 
-    document.getElementById("economic-label").innerHTML = setLabel(equality, econArray)
-    document.getElementById("diplomatic-label").innerHTML = setLabel(peace, diplArray)
-    document.getElementById("state-label").innerHTML = setLabel(liberty, govtArray)
-    document.getElementById("society-label").innerHTML = setLabel(progress, sctyArray)
-
-    ideology = ""
-    ideodist = Infinity
-    for (var i = 0; i < ideologies.length; i++) {
-        dist = 0
-        dist += Math.pow(Math.abs(ideologies[i].stats.econ - equality), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.govt - liberty), 2)
-        dist += Math.pow(Math.abs(ideologies[i].stats.dipl - peace), 1.73856063)
-        dist += Math.pow(Math.abs(ideologies[i].stats.scty - progress), 1.73856063)
-        if (dist < ideodist) {
-            ideology = ideologies[i].name
-            ideodist = dist
-        }
-    }
-    document.getElementById("ideology-label").innerHTML = ideology
+    document.getElementById("labour-label").innerHTML = setLabel(labour, labArray)
+    document.getElementById("conservative-label").innerHTML = setLabel(conservative, conArray)
+    document.getElementById("ld-label").innerHTML = setLabel(libdem, ldArray)
+    document.getElementById("lib-label").innerHTML = setLabel(libertarian, libArray)
+	document.getElementById("cit-label").innerHTML = setLabel(citizen, citArray)
 
     function createImage(src, x, y, w, h) {
         img = new Image ()
@@ -158,74 +131,75 @@ stats"></a></div></noscript>
         var c = document.createElement("canvas")
         var ctx = c.getContext("2d")
         c.width = 800;
-        c.height = 650;
+        c.height = 770;
         ctx.fillStyle = "#EEEEEE"
-        ctx.fillRect(0,0,800,650);
+        ctx.fillRect(0,0,800,770);
 
-        img = document.getElementById("img-equality")
+        img = document.getElementById("img-lab")
         ctx.drawImage(img, 20, 170, 100, 100);
-        img = document.getElementById("img-wealth")
-        ctx.drawImage(img, 680, 170, 100, 100)
-        img = document.getElementById("img-might")
+        img = document.getElementById("img-con")
         ctx.drawImage(img, 20, 290, 100, 100)
-        img = document.getElementById("img-peace")
-        ctx.drawImage(img, 680, 290, 100, 100)
-        img = document.getElementById("img-liberty")
+        img = document.getElementById("img-ld")
         ctx.drawImage(img, 20, 410, 100, 100)
-        img = document.getElementById("img-authority")
-        ctx.drawImage(img, 680, 410, 100, 100)
-        img = document.getElementById("img-tradition")
+        img = document.getElementById("img-lib")
         ctx.drawImage(img, 20, 530, 100, 100)
-        img = document.getElementById("img-progress")
-        ctx.drawImage(img, 680, 530, 100, 100)
+		img = document.getElementById("img-cit")
+        ctx.drawImage(img, 20, 650, 100, 100)
 
         ctx.fillStyle="#222222"
         ctx.fillRect(120, 180, 560, 80)
         ctx.fillRect(120, 300, 560, 80)
         ctx.fillRect(120, 420, 560, 80)
         ctx.fillRect(120, 540, 560, 80)
-        ctx.fillStyle="#f44336"
-        ctx.fillRect(120, 184, 5.6*equality-2, 72)
-        ctx.fillStyle="#00897b"
-        ctx.fillRect(682-5.6*wealth, 184, 5.6*wealth-2, 72)
-        ctx.fillStyle="#ff9800"
-        ctx.fillRect(120, 304, 5.6*might-2, 72)
-        ctx.fillStyle="#03a9f4"
-        ctx.fillRect(682-5.6*peace, 304, 5.6*peace-2, 72)
-        ctx.fillStyle="#ffeb3b"
-        ctx.fillRect(120, 424, 5.6*liberty-2, 72)
-        ctx.fillStyle="#3f51b5"
-        ctx.fillRect(682-5.6*authority, 424, 5.6*authority-2, 72)
-        ctx.fillStyle="#8bc34a"
-        ctx.fillRect(120, 544, 5.6*tradition-2, 72)
-        ctx.fillStyle="#9c27b0"
-        ctx.fillRect(682-5.6*progress, 544, 5.6*progress-2, 72)
+		ctx.fillRect(120, 660, 560, 80)
+        ctx.fillStyle="#ff0000"
+        ctx.fillRect(120, 184, 5.6*labour-2, 72)
+        ctx.fillStyle="#000000"
+        ctx.fillRect(682-5.6*nlabour, 184, 5.6*nlabour-2, 72)
+        ctx.fillStyle="#0000ff"
+        ctx.fillRect(120, 304, 5.6*conservative-2, 72)
+        ctx.fillStyle="#000000"
+        ctx.fillRect(682-5.6*nconservative, 304, 5.6*nconservative-2, 72)
+        ctx.fillStyle="#ffff00"
+        ctx.fillRect(120, 424, 5.6*libdem-2, 72)
+        ctx.fillStyle="#000000"
+        ctx.fillRect(682-5.6*nlibdem, 424, 5.6*nlibdem-2, 72)
+        ctx.fillStyle="#ffb300"
+        ctx.fillRect(120, 544, 5.6*libertarian-2, 72)
+        ctx.fillStyle="#000000"
+        ctx.fillRect(682-5.6*nlibertarian, 544, 5.6*nlibertarian-2, 72)
+		ctx.fillStyle="#ff00ff"
+        ctx.fillRect(120, 664, 5.6*citizen-2, 72)
+        ctx.fillStyle="#000000"
+        ctx.fillRect(682-5.6*ncitizen, 664, 5.6*ncitizen-2, 72)
         ctx.fillStyle="#222222"
         ctx.font="700 80px Montserrat"
         ctx.textAlign="left"
         ctx.fillText("8values", 20, 90)
         ctx.font="50px Montserrat"
-        ctx.fillText(ideology, 20, 140)
 
         ctx.textAlign="left"
-        if (equality  > 30) {ctx.fillText(equality + "%", 130, 237.5)}
-        if (might     > 30) {ctx.fillText(might + "%", 130, 357.5)}
-        if (liberty   > 30) {ctx.fillText(liberty + "%", 130, 477.5)}
-        if (tradition > 30) {ctx.fillText(tradition + "%", 130, 597.5)}
+        if (labour  > 30) {ctx.fillText(labour + "%", 130, 237.5)}
+        if (conservative     > 30) {ctx.fillText(conservative + "%", 130, 357.5)}
+        if (libdem   > 30) {ctx.fillText(libdem + "%", 130, 477.5)}
+        if (libertarian > 30) {ctx.fillText(libertarian + "%", 130, 597.5)}
+		if (citizen > 30) {ctx.fillText(citizen + "%", 130, 717.5)}
         ctx.textAlign="right"
-        if (wealth    > 30) {ctx.fillText(wealth + "%", 670, 237.5)}
-        if (peace     > 30) {ctx.fillText(peace + "%", 670, 357.5)}
-        if (authority > 30) {ctx.fillText(authority + "%", 670, 477.5)}
-        if (progress  > 30) {ctx.fillText(progress + "%", 670, 597.5)}
+        if (nlabour    > 30) {ctx.fillText(nlabour + "%", 670, 237.5)}
+        if (nconservative     > 30) {ctx.fillText(nconservative + "%", 670, 357.5)}
+        if (nlibdem > 30) {ctx.fillText(nlibdem + "%", 670, 477.5)}
+        if (nlibertarian  > 30) {ctx.fillText(nlibertarian + "%", 670, 597.5)}
+		if (ncitizen  > 30) {ctx.fillText(ncitizen + "%", 670, 717.5)}
 
         ctx.font="300 30px Montserrat"
-        ctx.fillText("8values.github.io", 780, 60)
+        ctx.fillText("MHoC ISideWith.github.io", 780, 60)
 		ctx.fillText(version, 780, 90)
         ctx.textAlign="center"
-        ctx.fillText("Economic Axis: " + document.getElementById("economic-label").innerHTML, 400, 175)
-        ctx.fillText("Diplomatic Axis: " + document.getElementById("diplomatic-label").innerHTML, 400, 295)
-        ctx.fillText("Civil Axis: " + document.getElementById("state-label").innerHTML, 400, 415)
-        ctx.fillText("Societal Axis: " + document.getElementById("society-label").innerHTML, 400, 535)
+        ctx.fillText("Labour Axis: " + document.getElementById("labour-label").innerHTML, 400, 175)
+        ctx.fillText("Consevative Axis: " + document.getElementById("conservative-label").innerHTML, 400, 295)
+        ctx.fillText("Lib Dem Axis: " + document.getElementById("ld-label").innerHTML, 400, 415)
+        ctx.fillText("Libertarian Axis: " + document.getElementById("lib-label").innerHTML, 400, 535)
+		ctx.fillText("Citizen Axis: " + document.getElementById("cit-label").innerHTML, 400, 655)
 
         document.getElementById("banner").src = c.toDataURL();
     }
