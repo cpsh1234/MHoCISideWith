@@ -38,4 +38,5 @@ catagories = [
     {
         "catagory": "Defence"
         "questions": dquestions.js
-    },
+    }
+];
