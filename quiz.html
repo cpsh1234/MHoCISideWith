@@ -37,6 +37,7 @@
     var lab, con, ld, lib, cit; // User's scores
     lab = con = ld = lib = cit = 0;
     var qn = 0; // Question number
+    var sn = 0; // Section number
     var prev_answer = null;
     init_question();
     for (var i = 0; i < questions.length; i++) {
@@ -46,9 +47,10 @@
         max_lib += Math.abs(questions[i].effect.lib)
         max_cit += Math.abs(questions[i].effect.cit)
     }
+  <!-- Initialises the question -->
     function init_question() {
-        document.getElementById("question-text").innerHTML = questions[qn].question;
-        document.getElementById("question-number").innerHTML = "Question " + (qn + 1) + " of " + (questions.length);
+        document.getElementById("question-text").innerHTML = sections[sn].questions[qn].question;
+        document.getElementById("question-number").innerHTML = "Question " + (qn + 1) + " of " + (sections[sn].questions.length);
         if (prev_answer == null) {
             document.getElementById("back_button").style.display = 'none';
             document.getElementById("back_button_off").style.display = 'block';
