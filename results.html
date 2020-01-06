@@ -137,15 +137,15 @@
         ctx.drawImage(img, 20, 410, 100, 100)
         img = document.getElementById("img-lib")
         ctx.drawImage(img, 20, 530, 100, 100)
-		img = document.getElementById("img-cit")
+	img = document.getElementById("img-cit")
         ctx.drawImage(img, 20, 650, 100, 100)
 
-        ctx.fillStyle="#222222"
-        ctx.fillRect(120, 180, 560, 80)
-        ctx.fillRect(120, 300, 560, 80)
-        ctx.fillRect(120, 420, 560, 80)
-        ctx.fillRect(120, 540, 560, 80)
-		ctx.fillRect(120, 660, 560, 80)
+        //ctx.fillStyle="#222222"
+        //ctx.fillRect(120, 180, 560, 80)
+        //ctx.fillRect(120, 300, 560, 80)
+        //ctx.fillRect(120, 420, 560, 80)
+        //ctx.fillRect(120, 540, 560, 80)
+	//ctx.fillRect(120, 660, 560, 80)
         ctx.fillStyle="#ff0000"
         ctx.fillRect(120, 184, 5.6*labour-2, 72)
         ctx.fillStyle="#000000"
@@ -162,7 +162,7 @@
         ctx.fillRect(120, 544, 5.6*libertarian-2, 72)
         ctx.fillStyle="#000000"
         ctx.fillRect(682-5.6*nlibertarian, 544, 5.6*nlibertarian-2, 72)
-		ctx.fillStyle="#ff00ff"
+	ctx.fillStyle="#ff00ff"
         ctx.fillRect(120, 664, 5.6*citizen-2, 72)
         ctx.fillStyle="#000000"
         ctx.fillRect(682-5.6*ncitizen, 664, 5.6*ncitizen-2, 72)
@@ -174,20 +174,19 @@
 
         ctx.textAlign="left"
         if (labour  		> 20) {ctx.fillText(labour + "%", 130, 237.5)}
-        if (conservative    > 20) {ctx.fillText(conservative + "%", 130, 357.5)}
+        if (conservative    	> 20) {ctx.fillText(conservative + "%", 130, 357.5)}
         if (libdem   		> 20) {ctx.fillText(libdem + "%", 130, 477.5)}
         if (libertarian 	> 20) {ctx.fillText(libertarian + "%", 130, 597.5)}
-		if (citizen 		> 20) {ctx.fillText(citizen + "%", 130, 717.5)}
+	if (citizen 		> 20) {ctx.fillText(citizen + "%", 130, 717.5)}
         ctx.textAlign="right"
         if (nlabour    		> 20) {ctx.fillText(nlabour + "%", 670, 237.5)}
-        if (nconservative   > 20) {ctx.fillText(nconservative + "%", 670, 357.5)}
+        if (nconservative   	> 20) {ctx.fillText(nconservative + "%", 670, 357.5)}
         if (nlibdem 		> 20) {ctx.fillText(nlibdem + "%", 670, 477.5)}
         if (nlibertarian  	> 20) {ctx.fillText(nlibertarian + "%", 670, 597.5)}
-		if (ncitizen  		> 20) {ctx.fillText(ncitizen + "%", 670, 717.5)}
+	if (ncitizen  		> 20) {ctx.fillText(ncitizen + "%", 670, 717.5)}
 
         ctx.font="300 30px Montserrat"
         ctx.fillText("MHoC ISideWith.github.io", 780, 60)
-		ctx.fillText(version, 780, 90)
         ctx.textAlign="center"
         ctx.fillText("Labour Axis: " + document.getElementById("labour-label").innerHTML, 400, 175)
         ctx.fillText("Consevative Axis: " + document.getElementById("conservative-label").innerHTML, 400, 295)
