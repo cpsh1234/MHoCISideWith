@@ -9,8 +9,7 @@
   version = "Test Edition #1" //Remember to update this before making changes to the test itself!
 </script>
 </head>
-<script type="application/javascript"
-        src="ideologies.js">
+<script type="application/javascript">
 </script>
 
 <body>
@@ -91,11 +90,11 @@
         	{return ""}
     }
 
-    labour  		= getQueryVariable("a")
-    conservative    = getQueryVariable("b")
-    libdem   		= getQueryVariable("c")
-    libertarian 	= getQueryVariable("d")
-    citizen    		= getQueryVariable("e")
+    labour  		= getQueryVariable("labscore")
+    conservative    = getQueryVariable("conscore")
+    libdem   		= getQueryVariable("ldscore")
+    libertarian 	= getQueryVariable("libscore")
+    citizen    		= getQueryVariable("citscore")
     nlabour     	= (100 - labour   ).toFixed(1)
     nconservative 	= (100 - conservative ).toFixed(1)
     nlibdem 		= (100 - libdem).toFixed(1)
