@@ -1,632 +1,290 @@
 questions = [
+    // Healthcare (9 questions)
     {
-        "question": "Oppression by corporations is more of a concern than oppression by governments.",
+        "question": "The NHS needs to have higher real-terms funding.",
         "effect": {
-            "econ": 10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 0
+            "lab": 10,
+            "con": -5,
+            "ld": 10,
+            "lib": -10,
+            "cit": 10
         }
     },
     {
-        "question": "It is necessary for the government to intervene in the economy to protect consumers.",
+        "question": "All prescriptions should be free on the NHS, no matter your income.",
         "effect": {
-            "econ": 10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 0
+            "lab": 10,
+            "con": -5,
+            "ld": 10,
+            "lib": -10,
+            "cit": 10
         }
     },
     {
-        "question": "The freer the markets, the freer the people.",
+        "question": "All dental work should be free, no matter your income.",
         "effect": {
-            "econ": -10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 0
+            "lab": 10,
+            "con": -5,
+            "ld": 10,
+            "lib": -10,
+            "cit": 10
         }
     },
     {
-        "question": "It is better to maintain a balanced budget than to ensure welfare for all citizens.",
+        "question": "It is immoral for any private company to profit from the NHS.",
         "effect": {
-            "econ": -10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 0
+            "lab": 10,
+            "con": -5,
+            "ld": 10,
+            "lib": -10,
+            "cit": 10
         }
     },
     {
-        "question": "Publicly-funded research is more beneficial to the people than leaving it to the market.",
+        "question": "It is unfair for people who pay for private health insurance to also pay for the NHS.",
         "effect": {
-            "econ": 10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 10
+            "lab": 10,
+            "con": -5,
+            "ld": 10,
+            "lib": -10,
+            "cit": 10
         }
     },
     {
-        "question": "International trade is beneficial.",
+        "question": "No one but UK nationals should get free treatment from the NHS, no matter their condition.",
         "effect": {
-            "econ": -5,
-            "dipl": 0,
-            "govt": 10,
-            "scty": 0
+            "lab": 10,
+            "con": -5,
+            "ld": 10,
+            "lib": -10,
+            "cit": 10
         }
     },
     {
-        "question": "From each according to his ability, to each according to his needs.",
+        "question": "The NHS should be abolished.",
         "effect": {
-            "econ": 10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 5
+            "lab": 10,
+            "con": -5,
+            "ld": 10,
+            "lib": -10,
+            "cit": 10
         }
     },
     {
-        "question": "It would be best if social programs were abolished in favor of private charity.",
+        "question": "Doctors deserve to be paid more.",
         "effect": {
-            "econ": -10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": -5
+            "lab": 10,
+            "con": -5,
+            "ld": 10,
+            "lib": -10,
+            "cit": 10
         }
     },
     {
-        "question": "Taxes should be increased on the rich to provide for the poor.",
+        "question": "It is right that as prescription drug prices increase that burden should be passed on to those who use the drugs.",
         "effect": {
-            "econ": 10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 0
+            "lab": 10,
+            "con": -5,
+            "ld": 10,
+            "lib": -10,
+            "cit": 10
         }
     },
+    
+    
+    // Education 8 Questions
+    
     {
-        "question": "Inheritance is a legitimate form of wealth.",
+        "question": "All schools should be funded equally.",
         "effect": {
-            "econ": -10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": -5
+            "lab": 10,
+            "con": -5,
+            "ld": 10,
+            "lib": -10,
+            "cit": 10
         }
     },
     {
-        "question": "Public utilities like roads and electricity should be publicly owned.",
+        "question": "The SATs tests should be abolished.",
         "effect": {
-            "econ": 10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 0
+            "lab": 10,
+            "con": -5,
+            "ld": 10,
+            "lib": -10,
+            "cit": 10
         }
     },
     {
-        "question": "Excessive government intervention is a threat to the economy.",
+        "question": "University should be free for all people.",
         "effect": {
-            "econ": -10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 0
+            "lab": 10,
+            "con": -5,
+            "ld": 10,
+            "lib": -10,
+            "cit": 10
         }
     },
     {
-        "question": "Those with a greater ability to pay should receive better healthcare.",
+        "question": "The best universities should be allowed to charge unlimited fees.",
         "effect": {
-            "econ": -10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 0
+            "lab": 10,
+            "con": -5,
+            "ld": 10,
+            "lib": -10,
+            "cit": 10
         }
     },
     {
-        "question": "Quality education is a right of all people.",
+        "question": "All children should be expected to lead british sign language.",
         "effect": {
-            "econ": 10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 10
+            "lab": 10,
+            "con": -5,
+            "ld": 10,
+            "lib": -10,
+            "cit": 10
         }
     },
     {
-        "question": "The means of production should belong to the workers who use them.",
+        "question": "All families should be given an educational voucher to make private education more accessible to all.",
         "effect": {
-            "econ": 10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 0
+            "lab": 10,
+            "con": -5,
+            "ld": 10,
+            "lib": -10,
+            "cit": 10
         }
     },
     {
-        "question": "The United Nations should be abolished.",
+        "question": "All children should be expected to learn to code a computer.",
         "effect": {
-            "econ": 0,
-            "dipl": -10,
-            "govt": -5,
-            "scty": 0
+            "lab": 10,
+            "con": -5,
+            "ld": 10,
+            "lib": -10,
+            "cit": 10
         }
     },
     {
-        "question": "Military action by our nation is often necessary to protect it.",
+        "question": "The current education system is too narrow and should be made broader and less restrictive.",
         "effect": {
-            "econ": 0,
-            "dipl": -10,
-            "govt": -10,
-            "scty": 0
+            "lab": 10,
+            "con": -5,
+            "ld": 10,
+            "lib": -10,
+            "cit": 10
         }
     },
+    
+    
+    // Social 11 questions
     {
-        "question": "I support regional unions, such as the European Union.",
+        "question": "Murderers who don't disclose the location of bodies should be denied parole.",
         "effect": {
-            "econ": -5,
-            "dipl": 10,
-            "govt": 10,
-            "scty": 5
+            "lab": 10,
+            "con": -5,
+            "ld": 10,
+            "lib": -10,
+            "cit": 10
         }
     },
     {
-        "question": "It is important to maintain our national sovereignty.",
+        "question": "Free speech should be guaranteed and that includes hate speech and incitement of violence.",
         "effect": {
-            "econ": 0,
-            "dipl": -10,
-            "govt": -5,
-            "scty": 0
+            "lab": 10,
+            "con": -5,
+            "ld": 10,
+            "lib": -10,
+            "cit": 10
         }
     },
     {
-        "question": "A united world government would be beneficial to mankind.",
+        "question": "All people, subject to minimal checks, should be allowed to carry firearms.",
         "effect": {
-            "econ": 0,
-            "dipl": 10,
-            "govt": 0,
-            "scty": 0
+            "lab": 10,
+            "con": -5,
+            "ld": 10,
+            "lib": -10,
+            "cit": 10
         }
     },
     {
-        "question": "It is more important to retain peaceful relations than to further our strength.",
+        "question": "The human rights act should be repealed.",
         "effect": {
-            "econ": 0,
-            "dipl": 10,
-            "govt": 0,
-            "scty": 0
+            "lab": 10,
+            "con": -5,
+            "ld": 10,
+            "lib": -10,
+            "cit": 10
         }
     },
     {
-        "question": "Wars do not need to be justified to other countries.",
+        "question": "There should be more police officers on the streets.",
         "effect": {
-            "econ": 0,
-            "dipl": -10,
-            "govt": -10,
-            "scty": 0
+            "lab": 10,
+            "con": -5,
+            "ld": 10,
+            "lib": -10,
+            "cit": 10
         }
     },
     {
-        "question": "Military spending is a waste of money.",
+        "question": "Terrorists get off too easily.",
         "effect": {
-            "econ": 0,
-            "dipl": 10,
-            "govt": 10,
-            "scty": 0
+            "lab": 10,
+            "con": -5,
+            "ld": 10,
+            "lib": -10,
+            "cit": 10
         }
     },
     {
-        "question": "International aid is a waste of money.",
+        "question": "Rough sleepers should be forced to live in homeless shelters and sleeping on the streets should be illegal.",
         "effect": {
-            "econ": -5,
-            "dipl": -10,
-            "govt": 0,
-            "scty": 0
+            "lab": 10,
+            "con": -5,
+            "ld": 10,
+            "lib": -10,
+            "cit": 10
         }
     },
     {
-        "question": "My nation is great.",
+        "question": "Recreational drug use should be decriminalised.",
         "effect": {
-            "econ": 0,
-            "dipl": -10,
-            "govt": 0,
-            "scty": 0
+            "lab": 10,
+            "con": -5,
+            "ld": 10,
+            "lib": -10,
+            "cit": 10
         }
     },
     {
-        "question": "Research should be conducted on an international scale.",
+        "question": "People should be allowed to get divorced without finding fault in the other person.",
         "effect": {
-            "econ": 0,
-            "dipl": 10,
-            "govt": 0,
-            "scty": 10
+            "lab": 10,
+            "con": -5,
+            "ld": 10,
+            "lib": -10,
+            "cit": 10
         }
     },
     {
-        "question": "Governments should be accountable to the international community.",
+        "question": "Both a man and a woman can be raped.",
         "effect": {
-            "econ": 0,
-            "dipl": 10,
-            "govt": 5,
-            "scty": 0
+            "lab": 10,
+            "con": -5,
+            "ld": 10,
+            "lib": -10,
+            "cit": 10
         }
     },
     {
-        "question": "Even when protesting an authoritarian government, violence is not acceptable.",
+        "question": "The death penalty should be an option for the most serious of crimes.",
         "effect": {
-            "econ": 0,
-            "dipl": 5,
-            "govt": -5,
-            "scty": 0
-        }
-    },
-    {
-        "question": "My religious values should be spread as much as possible.",
-        "effect": {
-            "econ": 0,
-            "dipl": -5,
-            "govt": -10,
-            "scty": -10
-        }
-    },
-    {
-        "question": "Our nation's values should be spread as much as possible.",
-        "effect": {
-            "econ": 0,
-            "dipl": -10,
-            "govt": -10,
-            "scty": 0
-        }
-    },
-    {
-        "question": "It is very important to maintain law and order.",
-        "effect": {
-            "econ": 0,
-            "dipl": -5,
-            "govt": -10,
-            "scty": -5
-        }
-    },
-    {
-        "question": "The general populace makes poor decisions.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -10,
-            "scty": 0
-        }
-    },
-    {
-        "question": "Victimless crimes (such as drug use) should not be crimes at all.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 10,
-            "scty": 0
-        }
-    },
-    {
-        "question": "The sacrifice of some civil liberties is necessary to protect us from acts of terrorism.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -10,
-            "scty": 0
-        }
-    },
-    {
-        "question": "Government surveillance is necessary in the modern world.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -10,
-            "scty": 0
-        }
-    },
-    {
-        "question": "The very existence of the state is a threat to our liberty.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 10,
-            "scty": 0
-        }
-    },
-    {
-        "question": "Regardless of political opinions, it is important to side with your country.",
-        "effect": {
-            "econ": 0,
-            "dipl": -10,
-            "govt": -10,
-            "scty": -5
-        }
-    },
-    {
-        "question": "All authority should be questioned.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 10,
-            "scty": 5
-        }
-    },
-    {
-        "question": "A hierarchical state is best.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -10,
-            "scty": 0
-        }
-    },
-    {
-        "question": "It is important that the government follows the majority opinion, even if it is wrong.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 10,
-            "scty": 0
-        }
-    },
-    {
-        "question": "The stronger the leadership, the better.",
-        "effect": {
-            "econ": 0,
-            "dipl": -10,
-            "govt": -10,
-            "scty": 0
-        }
-    },
-    {
-        "question": "Democracy is more than a decision-making process.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 10,
-            "scty": 0
-        }
-    },
-    {
-        "question": "Environmental regulations are essential.",
-        "effect": {
-            "econ": 5,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 10
-        }
-    },
-    {
-        "question": "A better world will come from automation, science, and technology.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 10
-        }
-    },
-    {
-        "question": "Children should be educated in religious or traditional values.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -10,
-            "scty": -10
-        }
-    },
-    {
-        "question": "Traditions are of no value on their own.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 10
-        }
-    },
-    {
-        "question": "Religion should play a role in government.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -10,
-            "scty": -10
-        }
-    },
-    {
-        "question": "Churches should be taxed the same way other institutions are taxed.",
-        "effect": {
-            "econ": 5,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 10
-        }
-    },
-    {
-        "question": "Climate change is currently one of the greatest threats to our way of life.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 10
-        }
-    },
-    {
-        "question": "It is important that we work as a united world to combat climate change.",
-        "effect": {
-            "econ": 0,
-            "dipl": 10,
-            "govt": 0,
-            "scty": 10
-        }
-    },
-    {
-        "question": "Society was better many years ago than it is now.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": -10
-        }
-    },
-    {
-        "question": "It is important that we maintain the traditions of our past.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": -10
-        }
-    },
-    {
-        "question": "It is important that we think in the long term, beyond our lifespans.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 10
-        }
-    },
-    {
-        "question": "Reason is more important than maintaining our culture.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 10
-        }
-    },
-    {
-        "question": "Drug use should be legalized or decriminalized.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 10,
-            "scty": 2
-        }
-    },
-    {
-        "question": "Same-sex marriage should be legal.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 10,
-            "scty": 10
-        }
-    },
-    {
-        "question": "No cultures are superior to others.",
-        "effect": {
-            "econ": 0,
-            "dipl": 10,
-            "govt": 5,
-            "scty": 10
-        }
-    },
-    {
-        "question": "Sex outside marriage is immoral.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -5,
-            "scty": -10
-        }
-    },
-    {
-        "question": "If we accept migrants at all, it is important that they assimilate into our culture.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -5,
-            "scty": -10
-        }
-    },
-    {
-        "question": "Abortion should be prohibited in most or all cases.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -10,
-            "scty": -10
-        }
-    },
-    {
-        "question": "Gun ownership should be prohibited for those without a valid reason.",
-        "effect": {
-            "econ": 0,
-            "dipl": 10,
-            "govt": -10,
-            "scty": 0
-        }
-    },
-    {
-        "question": "I support single-payer, universal healthcare.",
-        "effect": {
-            "econ": 10,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 0
-        }
-    },
-    {
-        "question": "Prostitution should be illegal.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": -10,
-            "scty": -10
-        }
-    },
-    {
-        "question": "Maintaining family values is essential.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": -10
-        }
-    },
-    {
-        "question": "To chase progress at all costs is dangerous.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": -10
-        }
-    },
-    {
-        "question": "Genetic modification is a force for good, even on humans.",
-        "effect": {
-            "econ": 0,
-            "dipl": 0,
-            "govt": 0,
-            "scty": 10
-        }
-    },
-    {
-        "question": "We should open our borders to immigration.",
-        "effect": {
-            "econ": 0,
-            "dipl": 10,
-            "govt": 10,
-            "scty": 0
-        }
-    },
-    {
-        "question": "Governments should be as concerned about foreigners as they are about their own citizens.",
-        "effect": {
-            "econ": 10,
-            "dipl": 10,
-            "govt": 0,
-            "scty": 0
-        }
-    },
-    {
-        "question": "All people - regardless of factors like culture or sexuality - should be treated equally.",
-        "effect": {
-            "econ": 10,
-            "dipl": 10,
-            "govt": 10,
-            "scty": 10
-        }
-    },
-    {
-        "question": "It is important that we further my group's goals above all others.",
-        "effect": {
-            "econ": -10,
-            "dipl": -10,
-            "govt": -10,
-            "scty": -10
+            "lab": 10,
+            "con": -5,
+            "ld": 10,
+            "lib": -10,
+            "cit": 10
         }
     }
 ];
