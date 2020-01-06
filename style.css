@@ -145,7 +145,7 @@ div.labour {
     border-right-style: solid;
 }
 div.nlabour {
-    background-color: #000000;
+    background-color: #ffffff;
     text-align: right;
     border-left-style: solid;
 }
@@ -155,7 +155,7 @@ div.conservative {
     border-right-style: solid;
 }
 div.nconservative {
-    background-color: #000000;
+    background-color: #ffffff;
     text-align: right;
     border-left-style: solid;
 }
@@ -165,7 +165,7 @@ div.libdem {
     border-left-style: solid;
 }
 div.nlibdem {
-    background-color: #000000;
+    background-color: #ffffff;
     text-align: left;
     border-right-style: solid;
 }
@@ -175,7 +175,7 @@ div.libertarian {
     border-left-style: solid;
 }
 div.nlibertarian {
-    background-color: #000000;
+    background-color: #ffffff;
     text-align: left;
     border-right-style: solid;
 }
@@ -185,7 +185,7 @@ div.citizen {
     border-left-style: solid;
 }
 div.ncitizen {
-    background-color: #000000;
+    background-color: #ffffff;
     text-align: left;
     border-right-style: solid;
 }
