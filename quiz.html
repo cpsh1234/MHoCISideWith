@@ -49,7 +49,7 @@
     }
 //Initialises the question
     function init_question() {
-        document.getElementById("question-text").innerHTML = sections[sn].questions[qn].question;
+        document.getElementById("question-text").innerHTML = catagories[sn].questions[qn].question;
         document.getElementById("question-number").innerHTML = "Question " + (qn + 1) + " of " + (sections[sn].questions.length);
         if (prev_answer == null) {
             document.getElementById("back_button").style.display = 'none';
