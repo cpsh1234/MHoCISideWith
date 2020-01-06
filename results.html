@@ -88,7 +88,7 @@
     }
 
     labour  		= getQueryVariable("a")
-    conservative    	= getQueryVariable("b")
+    conservative    = getQueryVariable("b")
     libdem   		= getQueryVariable("c")
     libertarian 	= getQueryVariable("d")
     citizen    		= getQueryVariable("e")
@@ -126,8 +126,6 @@
     window.onload = function() {
         var c = document.createElement("canvas")
         var ctx = c.getContext("2d")
-        c.width = 800;
-        c.height = 770;
         ctx.fillStyle = "#EEEEEE"
         ctx.fillRect(0,0,800,770);
 
@@ -175,17 +173,17 @@
         ctx.font="50px Montserrat"
 
         ctx.textAlign="left"
-        if (labour  > 30) {ctx.fillText(labour + "%", 130, 237.5)}
-        if (conservative     > 30) {ctx.fillText(conservative + "%", 130, 357.5)}
-        if (libdem   > 30) {ctx.fillText(libdem + "%", 130, 477.5)}
-        if (libertarian > 30) {ctx.fillText(libertarian + "%", 130, 597.5)}
-		if (citizen > 30) {ctx.fillText(citizen + "%", 130, 717.5)}
+        if (labour  		> 20) {ctx.fillText(labour + "%", 130, 237.5)}
+        if (conservative    > 20) {ctx.fillText(conservative + "%", 130, 357.5)}
+        if (libdem   		> 20) {ctx.fillText(libdem + "%", 130, 477.5)}
+        if (libertarian 	> 20) {ctx.fillText(libertarian + "%", 130, 597.5)}
+		if (citizen 		> 20) {ctx.fillText(citizen + "%", 130, 717.5)}
         ctx.textAlign="right"
-        if (nlabour    > 30) {ctx.fillText(nlabour + "%", 670, 237.5)}
-        if (nconservative     > 30) {ctx.fillText(nconservative + "%", 670, 357.5)}
-        if (nlibdem > 30) {ctx.fillText(nlibdem + "%", 670, 477.5)}
-        if (nlibertarian  > 30) {ctx.fillText(nlibertarian + "%", 670, 597.5)}
-		if (ncitizen  > 30) {ctx.fillText(ncitizen + "%", 670, 717.5)}
+        if (nlabour    		> 20) {ctx.fillText(nlabour + "%", 670, 237.5)}
+        if (nconservative   > 20) {ctx.fillText(nconservative + "%", 670, 357.5)}
+        if (nlibdem 		> 20) {ctx.fillText(nlibdem + "%", 670, 477.5)}
+        if (nlibertarian  	> 20) {ctx.fillText(nlibertarian + "%", 670, 597.5)}
+		if (ncitizen  		> 20) {ctx.fillText(ncitizen + "%", 670, 717.5)}
 
         ctx.font="300 30px Montserrat"
         ctx.fillText("MHoC ISideWith.github.io", 780, 60)
