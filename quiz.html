@@ -37,7 +37,6 @@
     var lab, con, ld, lib, cit; // User's scores
     lab = con = ld = lib = cit = 0;
     var qn = 0; // Question number
-    var sn = 0; // Section number
     var prev_answer = null;
     init_question();
     for (var i = 0; i < questions.length; i++) {
@@ -94,11 +93,11 @@
     }
     function results() {
         location.href = `results.html`
-            + `?a=${calc_score(lab,max_lab)}`
-            + `&b=${calc_score(con,max_con)}`
-            + `&c=${calc_score(ld,max_ld)}`
-            + `&d=${calc_score(lib,max_lib)}`
-            + `&e=${calc_score(cit,max_cit)}`
+            + `?labscore=${calc_score(lab,max_lab)}`
+            + `&conscore=${calc_score(con,max_con)}`
+            + `&ldscore=${calc_score(ld,max_ld)}`
+            + `&libscore=${calc_score(lib,max_lib)}`
+            + `&citscore=${calc_score(cit,max_cit)}`
     }
 </script>
 </body>
