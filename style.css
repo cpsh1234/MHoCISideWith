@@ -162,32 +162,32 @@ div.nconservative {
 div.libdem {
     background-color: #ffff00;
     text-align: left;
-    border-left-style: solid;
+    border-right-style: solid;
 }
 div.nlibdem {
     background-color: #ffffff;
     text-align: right;
-    border-right-style: solid;
+    border-left-style: solid;
 }
 div.libertarian {
     background-color: #ffb300;
     text-align: left;
-    border-left-style: solid;
+    border-right-style: solid;
 }
 div.nlibertarian {
     background-color: #ffffff;
     text-align: right;
-    border-right-style: solid;
+    border-left-style: solid;
 }
 div.citizen {
     background-color: #ff00ff;
     text-align: left;
-    border-left-style: solid;
+    border-right-style: solid;
 }
 div.ncitizen {
     background-color: #ffffff;
     text-align: right;
-    border-right-style: solid;
+    border-left-style: solid;
 }
 span.weight-300 {
     font-weight: 300;
