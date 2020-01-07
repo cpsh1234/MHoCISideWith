@@ -174,21 +174,22 @@
         ctx.fillStyle="#222222"
         ctx.font="700 80px Montserrat"
         ctx.textAlign="left"
-        ctx.fillText("8values", 20, 90)
+        ctx.fillText("TSR MHoC", 20, 90)
         ctx.font="50px Montserrat"
 
         ctx.textAlign="left"
-        if (labour  		> 20) {ctx.fillText(labour + "%", 130, 237.5)}
-        if (conservative    	> 20) {ctx.fillText(conservative + "%", 130, 357.5)}
-        if (libdem   		> 20) {ctx.fillText(libdem + "%", 130, 477.5)}
-        if (libertarian 	> 20) {ctx.fillText(libertarian + "%", 130, 597.5)}
-	if (citizen 		> 20) {ctx.fillText(citizen + "%", 130, 717.5)}
+        if (labour  		> 30) {ctx.fillText(labour + "%", 130, 237.5)}
+        if (conservative    	> 30) {ctx.fillText(conservative + "%", 130, 357.5)}
+        if (libdem   		> 30) {ctx.fillText(libdem + "%", 130, 477.5)}
+        if (libertarian 	> 30) {ctx.fillText(libertarian + "%", 130, 597.5)}
+	if (citizen 		> 30) {ctx.fillText(citizen + "%", 130, 717.5)}
         ctx.textAlign="right"
-        if (nlabour    		> 20) {ctx.fillText(nlabour + "%", 670, 237.5)}
-        if (nconservative   	> 20) {ctx.fillText(nconservative + "%", 670, 357.5)}
-        if (nlibdem 		> 20) {ctx.fillText(nlibdem + "%", 670, 477.5)}
-        if (nlibertarian  	> 20) {ctx.fillText(nlibertarian + "%", 670, 597.5)}
-	if (ncitizen  		> 20) {ctx.fillText(ncitizen + "%", 670, 717.5)}
+	ctx.fillStyle="#ffffff"
+        if (nlabour    		> 70) {ctx.fillText(labour + "%", 670, 237.5)}
+        if (nconservative   	> 70) {ctx.fillText(conservative + "%", 670, 357.5)}
+        if (nlibdem 		> 70) {ctx.fillText(libdem + "%", 670, 477.5)}
+        if (nlibertarian  	> 70) {ctx.fillText(libertarian + "%", 670, 597.5)}
+	if (ncitizen  		> 70) {ctx.fillText(citizen + "%", 670, 717.5)}
 
         ctx.font="300 30px Montserrat"
         ctx.fillText("MHoC ISideWith.github.io", 780, 60)
