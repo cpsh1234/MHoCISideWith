@@ -15,35 +15,35 @@
 
 <h1>Results</h1>
 
-<h2>Labour Axis: <span class="weight-300" id="labour-label"></span></h2>
+<h2>Labour Axis: <span class="weight-300" id="lablab"></span></h2>
 <div class="axis">
     <img id="img-lab" src="value_images/lab.png" height="128pt"/>
     <div class="bar labour" id="bar-labour"><div class="text-wrapper" id="labour"></div></div>
     <div class="bar nlabour" id="bar-nlabour"><div class="text-wrapper" id="nlabour"></div></div>
 	<img id="img-lab" src="value_images/lab.png" height="128pt"/>
 </div>
-<h2>Conservative Axis: <span class="weight-300" id="conservative-label"></span></h2>
+<h2>Conservative Axis: <span class="weight-300" id="conlab"></span></h2>
 <div class="axis">
     <img id="img-con" src="value_images/cons.png" height="128pt"/>
     <div class="bar conservative" id="bar-conservative"><div class="text-wrapper" id="conservative"></div></div>
     <div class="bar nconservative" id="bar-nconservative"><div class="text-wrapper" id="nconservative"></div></div>
     <img id="img-con" src="value_images/cons.png" height="128pt"/>
 </div>
-<h2>Lib Dem Axis: <span class="weight-300" id="ld-label"></span></h2>
+<h2>Lib Dem Axis: <span class="weight-300" id="ldlab"></span></h2>
 <div class="axis">
     <img id="img-ld" src="value_images/ld.png" height="128pt"/>
     <div class="bar libdem" id="bar-libdem"><div class="text-wrapper" id="libdem"></div></div>
     <div class="bar nlibdem" id="bar-nlibdem"><div class="text-wrapper" id="nlibdem"></div></div>
     <img id="img-ld" src="value_images/ld.png" height="128pt"/>
 </div>
-<h2>Libertarian Axis: <span class="weight-300" id="lib-label"></span></h2>
+<h2>Libertarian Axis: <span class="weight-300" id="liblab"></span></h2>
 <div class="axis">
     <img id="img-lib" src="value_images/lib.png" height="128pt"/>
     <div class="bar libertarian" id="bar-libertarian"><div class="text-wrapper" id="libertarian"></div></div>
-    <div class="bar nlibertarian" id="bar-nlibertarian"><div class="text-wrapper" id="libertarian"></div></div>
+    <div class="bar nlibertarian" id="bar-nlibertarian"><div class="text-wrapper" id="nlibertarian"></div></div>
     <img id="img-lib" src="value_images/lib.png" height="128pt"/>
 </div>
-<h2>Citizen Axis: <span class="weight-300" id="cit-label"></span></h2>
+<h2>Citizen Axis: <span class="weight-300" id="citlab"></span></h2>
 <div class="axis">
     <img id="img-cit" src="value_images/cit.png" height="128pt"/>
     <div class="bar citizen" id="bar-citizen"><div class="text-wrapper" id="citizen"></div></div>
@@ -76,20 +76,20 @@
         }
     }
 
-    labArray = ["Arch-Labour","Labour leaning","Swinging labour","Probably not Labour","Anti-Labour"]
-    conArray = ["Arch-Tory","Tory leaning","Swinging Conservative","Probably not a Tory","Anti-Tory"]
-    ldArray = ["Arch-Lib Dem","Lib Dem leaning","Swinging Lib Dem","Probably not a Lib Dem","Anti-Lib Dem"]
-    libArray = ["Arch-Libertarian","Libertarian leaning","Swinging Libertarian","Probably not a Libertarian","Anti-Libertarian"]
-    citArray = ["Arch-Citizen","Citizen leaning","Swinging Citizen","Probably not a Citizen","Anti-Citizen"]
+    //labArray = ["Arch-Labour","Labour leaning","Swinging labour","Probably not Labour","Anti-Labour"]
+    //conArray = ["Arch-Tory","Tory leaning","Swinging Conservative","Probably not a Tory","Anti-Tory"]
+    //ldArray = ["Arch-Lib Dem","Lib Dem leaning","Swinging Lib Dem","Probably not a Lib Dem","Anti-Lib Dem"]
+    //libArray = ["Arch-Libertarian","Libertarian leaning","Swinging Libertarian","Probably not a Libertarian","Anti-Libertarian"]
+    //citArray = ["Arch-Citizen","Citizen leaning","Swinging Citizen","Probably not a Citizen","Anti-Citizen"]
 
-    function setLabel(val,ary) {
+    function setLabel(val, name) {
         if (val > 100) { return "" } else
-        if (val > 90) { return ary[0] } else
-        if (val > 75) { return ary[1] } else
-        if (val > 50) { return ary[2] } else
-        if (val >= 25) { return ary[3] } else
-        if (val >= 0) { return ary[4] } else
-        	{return ""}
+        if (val > 90) { return "Arch-" + name } else
+        if (val > 75) { return name + " leaning" } else
+        if (val > 50) { return "Swinging " + name } else
+        if (val >= 25) { return "Probably not " + name } else
+        if (val >= 0) { return "Anti-" + name } else
+        {return ""}
     }
 
     labour  		= getQueryVariable("a")
@@ -114,11 +114,11 @@
     setBarValue("nlibertarian", nlibertarian)
     setBarValue("ncitizen", ncitizen)
 
-    document.getElementById("labour-label").innerHTML = setLabel(labour, labArray)
-    document.getElementById("conservative-label").innerHTML = setLabel(conservative, conArray)
-    document.getElementById("ld-label").innerHTML = setLabel(libdem, ldArray)
-    document.getElementById("lib-label").innerHTML = setLabel(libertarian, libArray)
-	document.getElementById("cit-label").innerHTML = setLabel(citizen, citArray)
+    document.getElementById("lablab").innerHTML = setLabel(labour, "Labour")
+    document.getElementById("conlab").innerHTML = setLabel(conservative, "Conservative")
+    document.getElementById("ldlab").innerHTML = setLabel(libdem, "Lib Dem")
+    document.getElementById("liblab").innerHTML = setLabel(libertarian, "Libertarian")
+    document.getElementById("citlab").innerHTML = setLabel(citizen, "Citizen")
 
     function createImage(src, x, y, w, h) {
         img = new Image ()
@@ -193,11 +193,11 @@
         ctx.font="300 30px Montserrat"
         ctx.fillText("MHoC ISideWith.github.io", 780, 60)
         ctx.textAlign="center"
-        ctx.fillText("Labour Axis: " + document.getElementById("labour-label").innerHTML, 400, 175)
-        ctx.fillText("Consevative Axis: " + document.getElementById("conservative-label").innerHTML, 400, 295)
-        ctx.fillText("Lib Dem Axis: " + document.getElementById("ld-label").innerHTML, 400, 415)
-        ctx.fillText("Libertarian Axis: " + document.getElementById("lib-label").innerHTML, 400, 535)
-	ctx.fillText("Citizen Axis: " + document.getElementById("cit-label").innerHTML, 400, 655)
+        ctx.fillText("Labour Axis: " + document.getElementById("lablab").innerHTML, 400, 175)
+        ctx.fillText("Consevative Axis: " + document.getElementById("conlab").innerHTML, 400, 295)
+        ctx.fillText("Lib Dem Axis: " + document.getElementById("ldlab").innerHTML, 400, 415)
+        ctx.fillText("Libertarian Axis: " + document.getElementById("liblab").innerHTML, 400, 535)
+	ctx.fillText("Citizen Axis: " + document.getElementById("citlab").innerHTML, 400, 655)
 
         document.getElementById("banner").src = c.toDataURL();
     }
