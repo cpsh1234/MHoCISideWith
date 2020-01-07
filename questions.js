@@ -135,7 +135,7 @@ questions = [
         }
     },
     {
-        "question": "All children should be expected to lead british sign language.",
+        "question": "All children should be expected to learn british sign language.",
         "effect": {
             "lab": 10,
             "con": -5,
@@ -208,7 +208,7 @@ questions = [
         }
     },
     {
-        "question": "The human rights act should be repealed.",
+        "question": "The Human Rights Act should be repealed.",
         "effect": {
             "lab": 10,
             "con": -5,
@@ -340,7 +340,7 @@ questions = [
         }
     },
     {
-        "question": "The House of Lords be abolished.",
+        "question": "The House of Lords should be abolished.",
         "effect": {
             "lab": 10,
             "con": -5,
@@ -825,7 +825,7 @@ questions = [
         }
     },
     {
-        "question": "All foreign nationals who aid the armed forces should receive british citizenship.",
+        "question": "All foreign nationals who aid the armed forces should receive British citizenship.",
         "effect": {
             "lab": 10,
             "con": -5,
