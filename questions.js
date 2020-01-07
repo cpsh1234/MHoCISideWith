@@ -3,91 +3,91 @@ questions = [
     {
         "question": "The NHS needs to have higher real-terms funding.",
         "effect": {
-            "lab": 10,
-            "con": -5,
-            "ld": 10,
-            "lib": -10,
-            "cit": 10
+            "lab": 38896,
+            "con": 0,
+            "ld": 38896,
+            "lib": -38896,
+            "cit": -19448
         }
     },
     {
         "question": "All prescriptions should be free on the NHS, no matter your income.",
         "effect": {
-            "lab": 10,
-            "con": -5,
-            "ld": 10,
-            "lib": -10,
-            "cit": 10
+            "lab": 38896,
+            "con": -38896,
+            "ld": 0,
+            "lib": -38896,
+            "cit": -38896
         }
     },
     {
         "question": "All dental work should be free, no matter your income.",
         "effect": {
-            "lab": 10,
-            "con": -5,
-            "ld": 10,
-            "lib": -10,
-            "cit": 10
+            "lab": 38896,
+            "con": -38896,
+            "ld": -19448,
+            "lib": -38896,
+            "cit": -19448
         }
     },
     {
         "question": "It is immoral for any private company to profit from the NHS.",
         "effect": {
-            "lab": 10,
-            "con": -5,
-            "ld": 10,
-            "lib": -10,
-            "cit": 10
+            "lab": 38896,
+            "con": -19448,
+            "ld": 19448,
+            "lib": -38896,
+            "cit": -19448
         }
     },
     {
         "question": "It is unfair for people who pay for private health insurance to also pay for the NHS.",
         "effect": {
-            "lab": 10,
-            "con": -5,
-            "ld": 10,
-            "lib": -10,
-            "cit": 10
+            "lab": -38896,
+            "con": 0,
+            "ld": -38896,
+            "lib": 38896,
+            "cit": -19448
         }
     },
     {
         "question": "No one but UK nationals should get free treatment from the NHS, no matter their condition.",
         "effect": {
-            "lab": 10,
-            "con": -5,
-            "ld": 10,
-            "lib": -10,
-            "cit": 10
+            "lab": -38896,
+            "con": 19448,
+            "ld": -19448,
+            "lib": 38896,
+            "cit": -19448
         }
     },
     {
         "question": "The NHS should be abolished.",
         "effect": {
-            "lab": 10,
-            "con": -5,
-            "ld": 10,
-            "lib": -10,
-            "cit": 10
+            "lab": -38896,
+            "con": -19448,
+            "ld": -38896,
+            "lib": 38896,
+            "cit": -19448
         }
     },
     {
         "question": "Doctors deserve to be paid more.",
         "effect": {
-            "lab": 10,
-            "con": -5,
-            "ld": 10,
-            "lib": -10,
-            "cit": 10
+            "lab": 38896,
+            "con": 0,
+            "ld": 38896,
+            "lib": -19448,
+            "cit": -19448
         }
     },
     {
         "question": "It is right that as prescription drug prices increase that burden should be passed on to those who use the drugs.",
         "effect": {
-            "lab": 10,
-            "con": -5,
-            "ld": 10,
-            "lib": -10,
-            "cit": 10
+            "lab": -38896,
+            "con": 38896,
+            "ld": -19448,
+            "lib": 19448,
+            "cit": 19448
         }
     },
     
@@ -97,81 +97,81 @@ questions = [
     {
         "question": "All schools should be funded equally.",
         "effect": {
-            "lab": 10,
-            "con": -5,
-            "ld": 10,
-            "lib": -10,
-            "cit": 10
+            "lab": 43758,
+            "con": -21879,
+            "ld": 21879,
+            "lib": -43758,
+            "cit": -21879
         }
     },
     {
         "question": "The SATs tests should be abolished.",
         "effect": {
-            "lab": 10,
-            "con": -5,
-            "ld": 10,
-            "lib": -10,
-            "cit": 10
+            "lab": 43758,
+            "con": -21879,
+            "ld": 21879,
+            "lib": 21879,
+            "cit": -21879
         }
     },
     {
         "question": "University should be free for all people.",
         "effect": {
-            "lab": 10,
-            "con": -5,
-            "ld": 10,
-            "lib": -10,
-            "cit": 10
+            "lab": 43758,
+            "con": -43758,
+            "ld": -21879,
+            "lib": -43758,
+            "cit": -43758
         }
     },
     {
         "question": "The best universities should be allowed to charge unlimited fees.",
         "effect": {
-            "lab": 10,
-            "con": -5,
-            "ld": 10,
-            "lib": -10,
-            "cit": 10
+            "lab": -43758,
+            "con": 43758,
+            "ld": -21879,
+            "lib": 21879,
+            "cit": -43758
         }
     },
     {
         "question": "All children should be expected to learn british sign language.",
         "effect": {
-            "lab": 10,
-            "con": -5,
-            "ld": 10,
-            "lib": -10,
-            "cit": 10
+            "lab": 21879,
+            "con": 21879,
+            "ld": 43758,
+            "lib": -43758,
+            "cit": -43758
         }
     },
     {
         "question": "All families should be given an educational voucher to make private education more accessible to all.",
         "effect": {
-            "lab": 10,
-            "con": -5,
-            "ld": 10,
-            "lib": -10,
-            "cit": 10
+            "lab": -43758,
+            "con": 21879,
+            "ld": -21879,
+            "lib": 43758,
+            "cit": 21879
         }
     },
     {
         "question": "All children should be expected to learn to code a computer.",
         "effect": {
-            "lab": 10,
-            "con": -5,
-            "ld": 10,
-            "lib": -10,
-            "cit": 10
+            "lab": -21879,
+            "con": 21879,
+            "ld": 43758,
+            "lib": 21879,
+            "cit": 21879
         }
     },
     {
         "question": "The current education system is too narrow and should be made broader and less restrictive.",
         "effect": {
-            "lab": 10,
-            "con": -5,
-            "ld": 10,
-            "lib": -10,
-            "cit": 10
+            "lab": -21879,
+            "con": -21879,
+            "ld": 21879,
+            "lib": 43758,
+            "cit": 21879
         }
     },
     
