@@ -76,18 +76,13 @@
         }
     }
 
-    //labArray = ["Arch-Labour","Labour leaning","Swinging labour","Probably not Labour","Anti-Labour"]
-    //conArray = ["Arch-Tory","Tory leaning","Swinging Conservative","Probably not a Tory","Anti-Tory"]
-    //ldArray = ["Arch-Lib Dem","Lib Dem leaning","Swinging Lib Dem","Probably not a Lib Dem","Anti-Lib Dem"]
-    //libArray = ["Arch-Libertarian","Libertarian leaning","Swinging Libertarian","Probably not a Libertarian","Anti-Libertarian"]
-    //citArray = ["Arch-Citizen","Citizen leaning","Swinging Citizen","Probably not a Citizen","Anti-Citizen"]
 
     function setLabel(val, name) {
-        if (val > 100) { return "" } else
-        if (val > 90) { return "Arch-" + name } else
-        if (val > 75) { return name + " leaning" } else
-        if (val > 50) { return "Swinging " + name } else
-        if (val >= 25) { return "Probably not " + name } else
+        if (val >= 100) { return "" } else
+        if (val >= 85) { return "Arch-" + name } else
+        if (val >= 70) { return "Core-" + name  } else
+        if (val >= 55) { return "Semi-" + name } else
+        if (val >= 30) { return name + "-Averse" } else
         if (val >= 0) { return "Anti-" + name } else
         {return ""}
     }
