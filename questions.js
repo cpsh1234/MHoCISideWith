@@ -268,7 +268,7 @@ questions = [
         }
     },
     {
-        "question": "Both a man and a woman can be raped.",
+        "question": "The law should reflect that both a man and a woman can be raped.",
         "effect": {
             "lab": 2*15912,
             "con": 2*15912,
@@ -326,7 +326,7 @@ questions = [
             "con": 2*19448,
             "ld": -19448,
             "lib": 19448,
-            "cit": -19448
+            "cit": 19448
         }
     },
     {
@@ -356,11 +356,11 @@ questions = [
             "con": 19448,
             "ld": -19448,
             "lib": 2*19448,
-            "cit": -19448
+            "cit": 19448
         }
     },
     {
-        "question": "Convicted Criminals should be afforded the right to vote.",
+        "question": "Convicted criminals should be afforded the right to vote.",
         "effect": {
             "lab": 2*19448,
             "con": -19448,
@@ -370,13 +370,13 @@ questions = [
         }
     },
     {
-        "question": "Convicted Criminals should be afforded the right to stand for election.",
+        "question": "Convicted criminals should be afforded the right to stand for election.",
         "effect": {
             "lab": 2*19448,
             "con": -19448,
             "ld": 19448,
             "lib": -2*19448,
-            "cit": -19448
+            "cit": 19448
         }
     },
     
@@ -390,7 +390,7 @@ questions = [
             "con": -13464,
             "ld": 2*13464,
             "lib": -2*13464,
-            "cit": 13464
+            "cit": 2*13464
         }
     },
     {
@@ -400,7 +400,7 @@ questions = [
             "con": -13464,
             "ld": -2*13464,
             "lib": 2*13464,
-            "cit": 13464
+            "cit": -13464
         }
     },
     {
@@ -410,7 +410,7 @@ questions = [
             "con": -2*13464,
             "ld": 2*13464,
             "lib": -2*13464,
-            "cit": -2*13464
+            "cit": -13464
         }
     },
     {
@@ -440,7 +440,7 @@ questions = [
             "con": 2*13464,
             "ld": 2*13464,
             "lib": -2*13464,
-            "cit": -13464
+            "cit": 13464
         }
     },
     {
@@ -450,7 +450,7 @@ questions = [
             "con": 2*13464,
             "ld": -13464,
             "lib": 13464,
-            "cit": 0
+            "cit": -13464
         }
     },
     {
@@ -470,7 +470,7 @@ questions = [
             "con": 2*13464,
             "ld": -2*13464,
             "lib": -13464,
-            "cit": -13464
+            "cit": -2*13464
         }
     },
     {
@@ -480,7 +480,7 @@ questions = [
             "con": -13464,
             "ld": 2*13464,
             "lib": -13464,
-            "cit": -13464
+            "cit": -2*13464
         }
     },
     {
@@ -490,7 +490,7 @@ questions = [
             "con": -13464,
             "ld": 2*13464,
             "lib": -2*13464,
-            "cit": -13464
+            "cit": 13464
         }
     },
     {
@@ -801,7 +801,7 @@ questions = [
             "con": 2*13464,
             "ld": 2*13464,
             "lib": 2*13464,
-            "cit": -13464
+            "cit": 13464
         }
     },
     {
@@ -811,7 +811,7 @@ questions = [
             "con": 2*13464,
             "ld": 13464,
             "lib": 13464,
-            "cit": 13464
+            "cit": -13464
         }
     },
     {
