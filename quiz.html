@@ -113,14 +113,14 @@
   }
   
   function get_cat_weight(i) {
-    if( i < 9){ return 19448 } else
-    if( i < 17){ return 21879 } else
-    if( i < 28){ return 15912 } else
-    if( i < 37){ return 19448 } else
-    if( i < 50){ return 13464 } else
-    if( i < 67){ return 10296 } else
-    if( i < 73){ return 29172 } else
-    if( i < 86){ return 13464 } else
+    if(i <= 8){ return 19448 } else
+    if(i <= 16){ return 21879 } else
+    if(i <= 27){ return 15912 } else
+    if(i <= 36){ return 19448 } else
+    if(i <= 49){ return 13464 } else
+    if(i <= 66){ return 10296 } else
+    if(i <= 72){ return 29172 } else
+    if(i <= 85){ return 13464 } else
     {return 0}
   }
 
