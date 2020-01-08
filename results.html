@@ -78,7 +78,8 @@
 
 
     function setLabel(val, name) {
-        if (val >= 100) { return "" } else
+	if (val > 100) { return "Liar"}
+        if (val = 100) { return "Perfect-" + name } else
         if (val >= 85) { return "Arch-" + name } else
         if (val >= 70) { return "Core-" + name  } else
         if (val >= 55) { return "Semi-" + name } else
