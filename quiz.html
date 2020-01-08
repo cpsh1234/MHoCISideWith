@@ -38,13 +38,21 @@
     lab = con = ld = lib = cit = 0;
     var qn = 0; // Question number
     var prev_answer = null;
+    var lab_w, con_w, ld_w, lib_w, cit_w, qn_w;
+    lab_w = con_w = ld_w = lib_w = cit_w = qn_w = 0;
     init_question();
     for (var i = 0; i < questions.length; i++) {
-        max_lab += Math.abs(glabm(2,i)*get_cat_weight(i);)
-        max_con += Math.abs(gconm(2,i)*get_cat_weight(i);)
-        max_ld += Math.abs(gldm(2,i)*get_cat_weight(i);)
-        max_lib += Math.abs(glibm(2,i)*get_cat_weight(i);)
-        max_cit += Math.abs(gcitm(2,i)*get_cat_weight(i);)
+      glabm(2,i);
+      gconm(2,i);
+      gldm(2,i);
+      glibm(2,i);
+      gcitm(2,i);
+      get_cat_weight(i);
+        max_lab += Math.abs(lab_m*qn_m);
+        max_con += Math.abs(con_m*qn_m);
+        max_ld += Math.abs(ld_m*qn_m);
+        max_lib += Math.abs(lib_m*qn_m);
+        max_cit += Math.abs(cit_m*qn_m);
     }
 //Initialises the question
     function init_question() {
@@ -62,73 +70,79 @@
   
 // Weight Party Scores
   function glabm(mult,i){
-    if(Math.abs(questions[i].effect.lab) == 2){ return mult*questions[i].effect.lab } else
+    if(Math.abs(questions[i].effect.lab) == 2){ lab_w = mult*questions[i].effect.lab } else
     if(Math.abs(questions[i].effect.lab) == 1){
-        if(mult > 0){ return 2} else
-        if(mult < 0){ return -2} else
-        {return 0}
+        if(mult > 0){ lab_w = 2*questions[i].effect.lab} else
+        if(mult < 0){ lab_w = -2*questions[i].effect.lab} else
+        {lab_w = 0}
     } else
-    {return 0}
+    {lab_w = 0}
   }
   
     function gconm(mult,i){
-    if(Math.abs(questions[i].effect.con) == 2){ return mult*questions[i].effect.con } else
+    if(Math.abs(questions[i].effect.con) == 2){ con_w = mult*questions[i].effect.con } else
     if(Math.abs(questions[i].effect.con) == 1){
-        if(mult > 0){ return 2} else
-        if(mult < 0){ return -2} else
-        {return 0}
+        if(mult > 0){ con_w = 2*questions[i].effect.con} else
+        if(mult < 0){ con_w = -2*questions[i].effect.con} else
+        {con_w = 0}
     } else
-    {return 0}
+    {con_w = 0}
   }
   
     function gldm(mult,i){
-    if(Math.abs(questions[i].effect.ld) == 2){ return mult*questions[i].effect.ld } else
+    if(Math.abs(questions[i].effect.ld) == 2){ ld_w = mult*questions[i].effect.ld } else
     if(Math.abs(questions[i].effect.ld) == 1){
-        if(mult > 0){ return 2} else
-        if(mult < 0){ return -2} else
-        {return 0}
+        if(mult > 0){ ld_w = 2*questions[i].effect.ld} else
+        if(mult < 0){ ld_w = -2*questions[i].effect.ld} else
+        {ld_w = 0}
     } else
-    {return 0}
+    {ld_w = 0}
   }
   
     function glibm(mult,i){
-    if(Math.abs(questions[i].effect.lib) == 2){ return mult*questions[i].effect.lib } else
+    if(Math.abs(questions[i].effect.lib) == 2){ lib_w = mult*questions[i].effect.lib } else
     if(Math.abs(questions[i].effect.lib) == 1){
-        if(mult > 0){ return 2} else
-        if(mult < 0){ return -2} else
-        {return 0}
+        if(mult > 0){ lib_w = 2*questions[i].effect.lib} else
+        if(mult < 0){ lib_w = -2*questions[i].effect.lib} else
+        {lib_w = 0}
     } else
-    {return 0}
+    {lib_w = 0}
   }
   
     function gcitm(mult,i){
-    if(Math.abs(questions[i].effect.cit) == 2){ return mult*questions[i].effect.cit } else
+    if(Math.abs(questions[i].effect.cit) == 2){ cit_w = mult*questions[i].effect.cit } else
     if(Math.abs(questions[i].effect.cit) == 1){
-        if(mult > 0){ return 2} else
-        if(mult < 0){ return -2} else
-        {return 0}
+        if(mult > 0){ cit_w = 2*questions[i].effect.cit} else
+        if(mult < 0){ cit_w = -2*questions[i].effect.cit} else
+        {cit_w = 0}
     } else
-    {return 0}
+    {cit_w = 0}
   }
   
   function get_cat_weight(i) {
-    if(i <= 8){ return 19448 } else
-    if(i <= 16){ return 21879 } else
-    if(i <= 27){ return 15912 } else
-    if(i <= 36){ return 19448 } else
-    if(i <= 49){ return 13464 } else
-    if(i <= 66){ return 10296 } else
-    if(i <= 72){ return 29172 } else
-    if(i <= 85){ return 13464 } else
-    {return 0}
+    if(i <= 8){ qn_w = 19448 } else
+    if(i <= 16){ qn_w = 21879 } else
+    if(i <= 27){ qn_w = 15912 } else
+    if(i <= 36){ qn_w = 19448 } else
+    if(i <= 49){ qn_w = 13464 } else
+    if(i <= 66){ qn_w = 10296 } else
+    if(i <= 72){ qn_w = 29172 } else
+    if(i <= 85){ qn_w = 13464 } else
+    {qn_w = 0}
   }
 
     function next_question(mult) {
-        lab += glabm(mult,qn)*get_cat_weight(qn);
-        con += gconm(mult,qn)*get_cat_weight(qn);
-        ld += gldm(mult,qn)*get_cat_weight(qn);
-        lib += glibm(mult,qn)*get_cat_weight(qn);
-        cit += gcitm(mult,qn)*get_cat_weight(qn);
+      glabm(mult,qn);
+      gconm(mult,qn);
+      gldm(mult,qn);
+      glibm(mult,qn);
+      gcitm(mult,qn);
+      get_cat_weight(qn);
+        lab += lab_m*qn_m;
+        con += con_m*qn_m;
+        ld += ld_m*qn_m;
+        lib += lib_m*qn_m;
+        cit += cit_m*qn_m;
         qn++;
         prev_answer = mult;
         if (qn < questions.length) {
@@ -142,11 +156,17 @@
             return;
         }
         qn--;
-        lab -= glabm(prev_answer,qn)*get_cat_weight(qn);
-        con -= gconm(prev_answer,qn)*get_cat_weight(qn);
-        ld -= gldm(prev_answer,qn)*get_cat_weight(qn);
-        lib -= glibm(prev_answer,qn)*get_cat_weight(qn);
-        cit -= gcitm(prev_answer,qn)*get_cat_weight(qn);
+      glabm(prev_answer,qn);
+      gconm(prev_answer,qn);
+      gldm(prev_answer,qn);
+      glibm(prev_answer,qn);
+      gcitm(prev_answer,qn);
+      get_cat_weight(qn);
+        lab += lab_m*qn_m;
+        con += con_m*qn_m;
+        ld += ld_m*qn_m;
+        lib += lib_m*qn_m;
+        cit += cit_m*qn_m;
         prev_answer = null;
         init_question();
 
