@@ -51,7 +51,7 @@
     <img id="img-cit" src="value_images/cit.png" height="128pt"/>
 </div>
 <hr/>
-<canvas id="banner" width=800 height=1200 style="font-family:Montserrat"></canvas>
+<canvas id="banner" width=800 height=800 style="font-family:Montserrat"></canvas>
 <button class="button" onclick="location.href='index.html';" style="background-color: #2196f3;">Back</button> <br>
 
 <script>
@@ -127,7 +127,7 @@
         var c = document.getElementById("banner")
         var ctx = c.getContext("2d")
         ctx.fillStyle = "#EEEEEE"
-        ctx.fillRect(0,0,800,770);
+        ctx.fillRect(0,0,800,800);
 
         img = document.getElementById("img-lab")
         ctx.drawImage(img, 20, 170, 100, 100);
