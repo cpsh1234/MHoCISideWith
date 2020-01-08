@@ -62,7 +62,7 @@
   
 // Weight Party Scores
   function glabm(mult,i){
-    if(Math.abs(questions[i].effect.lab) == 2){ return mult*scoquestions[i].effect.lab } else
+    if(Math.abs(questions[i].effect.lab) == 2){ return mult*questions[i].effect.lab } else
     if(Math.abs(questions[i].effect.lab) == 1){
         if(mult > 0){ return 2} else
         if(mult < 0){ return -2} else
