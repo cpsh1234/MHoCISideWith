@@ -48,11 +48,11 @@
       glibm(2,i);
       gcitm(2,i);
       get_cat_weight(i);
-        max_lab += Math.abs(lab_m*qn_m);
-        max_con += Math.abs(con_m*qn_m);
-        max_ld += Math.abs(ld_m*qn_m);
-        max_lib += Math.abs(lib_m*qn_m);
-        max_cit += Math.abs(cit_m*qn_m);
+        max_lab += Math.abs(lab_w*qn_w);
+        max_con += Math.abs(con_w*qn_w);
+        max_ld += Math.abs(ld_w*qn_w);
+        max_lib += Math.abs(lib_w*qn_w);
+        max_cit += Math.abs(cit_w*qn_w);
     }
 //Initialises the question
     function init_question() {
@@ -77,17 +77,17 @@
         {lab_w = 0}
     } else
     {lab_w = 0}
-  }
+  };
   
     function gconm(mult,i){
-    if(Math.abs(questions[i].effect.con) == 2){ con_w = mult*questions[i].effect.con } else
+    if(Math.abs(questions[i].effect.con) == 2){ con_w = mult*questions[i].effect.con} else
     if(Math.abs(questions[i].effect.con) == 1){
         if(mult > 0){ con_w = 2*questions[i].effect.con} else
         if(mult < 0){ con_w = -2*questions[i].effect.con} else
         {con_w = 0}
     } else
     {con_w = 0}
-  }
+  };
   
     function gldm(mult,i){
     if(Math.abs(questions[i].effect.ld) == 2){ ld_w = mult*questions[i].effect.ld } else
@@ -97,7 +97,7 @@
         {ld_w = 0}
     } else
     {ld_w = 0}
-  }
+  };
   
     function glibm(mult,i){
     if(Math.abs(questions[i].effect.lib) == 2){ lib_w = mult*questions[i].effect.lib } else
@@ -107,7 +107,7 @@
         {lib_w = 0}
     } else
     {lib_w = 0}
-  }
+  };
   
     function gcitm(mult,i){
     if(Math.abs(questions[i].effect.cit) == 2){ cit_w = mult*questions[i].effect.cit } else
@@ -117,7 +117,7 @@
         {cit_w = 0}
     } else
     {cit_w = 0}
-  }
+  };
   
   function get_cat_weight(i) {
     if(i <= 8){ qn_w = 19448 } else
@@ -129,20 +129,10 @@
     if(i <= 72){ qn_w = 29172 } else
     if(i <= 85){ qn_w = 13464 } else
     {qn_w = 0}
-  }
+  };
 
     function next_question(mult) {
-      glabm(mult,qn);
-      gconm(mult,qn);
-      gldm(mult,qn);
-      glibm(mult,qn);
-      gcitm(mult,qn);
-      get_cat_weight(qn);
-        lab += lab_m*qn_m;
-        con += con_m*qn_m;
-        ld += ld_m*qn_m;
-        lib += lib_m*qn_m;
-        cit += cit_m*qn_m;
+      mark_question(mult);
         qn++;
         prev_answer = mult;
         if (qn < questions.length) {
@@ -151,6 +141,20 @@
             results();
         }
     }
+  function mark_question(mult){
+    glabm(mult,qn);
+      gconm(mult,qn);
+      gldm(mult,qn);
+      glibm(mult,qn);
+      gcitm(mult,qn);
+      get_cat_weight(qn);
+        lab += lab_w*qn_w;
+        con += con_w*qn_w;
+        ld += ld_w*qn_w;
+        lib += lib_w*qn_w;
+        cit += cit_w*qn_w;
+  }
+  
     function prev_question() {
         if (prev_answer == null) {
             return;
@@ -162,11 +166,11 @@
       glibm(prev_answer,qn);
       gcitm(prev_answer,qn);
       get_cat_weight(qn);
-        lab += lab_m*qn_m;
-        con += con_m*qn_m;
-        ld += ld_m*qn_m;
-        lib += lib_m*qn_m;
-        cit += cit_m*qn_m;
+        lab -= lab_w*qn_w;
+        con -= con_w*qn_w;
+        ld -= ld_w*qn_w;
+        lib -= lib_w*qn_w;
+        cit -= cit_w*qn_w;
         prev_answer = null;
         init_question();
 
