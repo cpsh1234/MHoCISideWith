@@ -21,11 +21,11 @@
 <hr>
 <h2 style="text-align:center;" id="question-number">Loading...</h2>
 <p class="question" id="question-text"></p>
-<button class="button" onclick="next_question( 1.0)" style="background-color: #1b5e20;">Strongly Agree</button> <br>
-<button class="button" onclick="next_question( 0.5)" style="background-color: #4caf50;">Agree</button> <br>
+<button class="button" onclick="next_question( 2.0)" style="background-color: #1b5e20;">Strongly Agree</button> <br>
+<button class="button" onclick="next_question( 1.0)" style="background-color: #4caf50;">Agree</button> <br>
 <button class="button" onclick="next_question( 0.0)" style="background-color: #bbbbbb;">Neutral/Unsure</button> <br>
-<button class="button" onclick="next_question(-0.5)" style="background-color: #f44336;">Disagree</button> <br>
-<button class="button" onclick="next_question(-1.0)" style="background-color: #b71c1c;">Strongly Disagree</button> <br>
+<button class="button" onclick="next_question(-1.0)" style="background-color: #f44336;">Disagree</button> <br>
+<button class="button" onclick="next_question(-2.0)" style="background-color: #b71c1c;">Strongly Disagree</button> <br>
 <button class="small_button" onclick="prev_question()" id="back_button">Back</button>
 <button class="small_button_off" id="back_button_off">Back</button><br>
   
@@ -40,11 +40,11 @@
     var prev_answer = null;
     init_question();
     for (var i = 0; i < questions.length; i++) {
-        max_lab += Math.abs(questions[i].effect.lab)
-        max_con += Math.abs(questions[i].effect.con)
-        max_ld += Math.abs(questions[i].effect.ld)
-        max_lib += Math.abs(questions[i].effect.lib)
-        max_cit += Math.abs(questions[i].effect.cit)
+        max_lab += Math.abs(get_mult(2,"lab",i)*get_cat_weight(i);)
+        max_con += Math.abs(get_mult(2,"con",i)*get_cat_weight(i);)
+        max_ld += Math.abs(get_mult(2,"ld",i)*get_cat_weight(i);)
+        max_lib += Math.abs(get_mult(2,"lib",i)*get_cat_weight(i);)
+        max_cit += Math.abs(get_mult(2,"cit",i)*get_cat_weight(i);)
     }
 //Initialises the question
     function init_question() {
@@ -59,13 +59,37 @@
         }
 
     }
+  
+  
+  function get_mult(mult,party,i){
+    var score = document.getElementById("questions[i].effect." + party)
+    if(Math.abs(score) == 2){ return mult*score } else
+    if(Math.abs(score) == 1){
+        if(mult > 0){ return 1} else
+        if(mult < 0){ return -1} else
+        {return 0}
+    } else
+    {return 0}
+  }
+  
+  function get_cat_weight(i) {
+    if( i < 9){ return 19448 } else
+    if( i < 17){ return 21879 } else
+    if( i < 28){ return 15912 } else
+    if( i < 37){ return 19448 } else
+    if( i < 50){ return 13464 } else
+    if( i < 67){ return 10296 } else
+    if( i < 73){ return 29172 } else
+    if( i < 86){ return 13464 } else
+    {return 0}
+  }
 
     function next_question(mult) {
-        lab += mult*questions[qn].effect.lab
-        con += mult*questions[qn].effect.con
-        ld += mult*questions[qn].effect.ld
-        lib += mult*questions[qn].effect.lib
-        cit += mult*questions[qn].effect.cit
+        lab += get_mult(mult,"lab",qn)*get_cat_weight(qn);
+        con += get_mult(mult,"con",qn)*get_cat_weight(qn);
+        ld += get_mult(mult,"ld",qn)*get_cat_weight(qn);
+        lib += get_mult(mult,"lib",qn)*get_cat_weight(qn);
+        cit += get_mult(mult,"cit",qn)*get_cat_weight(qn);
         qn++;
         prev_answer = mult;
         if (qn < questions.length) {
@@ -79,11 +103,11 @@
             return;
         }
         qn--;
-        lab -= prev_answer * questions[qn].effect.lab;
-        con -= prev_answer * questions[qn].effect.con;
-        ld -= prev_answer * questions[qn].effect.ld;
-        lib -= prev_answer * questions[qn].effect.lib;
-        cit -= prev_answer * questions[qn].effect.cit;
+        lab -= get_mult(prev_answer,"lab",qn)*get_cat_weight(qn);
+        con -= get_mult(prev_answer,"con",qn)*get_cat_weight(qn);
+        ld -= get_mult(prev_answer,"ld",qn)*get_cat_weight(qn);
+        lib -= get_mult(prev_answer,"lib",qn)*get_cat_weight(qn);
+        cit -= get_mult(prev_answer,"cit",qn)*get_cat_weight(qn);
         prev_answer = null;
         init_question();
 
