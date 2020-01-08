@@ -62,9 +62,8 @@
   
 // Weight Party Scores
   function get_lab_mult(mult,i){
-    var score = questions[i].effect.lab;
-    if(Math.abs(score) == 2){ return mult*score } else
-    if(Math.abs(score) == 1){
+    if(Math.abs(questions[i].effect.lab) == 2){ return mult*scoquestions[i].effect.lab } else
+    if(Math.abs(questions[i].effect.lab) == 1){
         if(mult > 0){ return 2} else
         if(mult < 0){ return -2} else
         {return 0}
@@ -73,9 +72,9 @@
   }
   
     function get_con_mult(mult,i){
-    var score = questions[i].effect.con;
-    if(Math.abs(score) == 2){ return mult*score } else
-    if(Math.abs(score) == 1){
+    var score = questions[i].effect.con
+    if(Math.abs(questions[i].effect.con) == 2){ return mult*questions[i].effect.con } else
+    if(Math.abs(questions[i].effect.con) == 1){
         if(mult > 0){ return 2} else
         if(mult < 0){ return -2} else
         {return 0}
@@ -84,9 +83,8 @@
   }
   
     function get_ld_mult(mult,i){
-    var score = questions[i].effect.ld;
-    if(Math.abs(score) == 2){ return mult*score } else
-    if(Math.abs(score) == 1){
+    if(Math.abs(questions[i].effect.ld) == 2){ return mult*questions[i].effect.ld } else
+    if(Math.abs(questions[i].effect.ld) == 1){
         if(mult > 0){ return 2} else
         if(mult < 0){ return -2} else
         {return 0}
@@ -95,9 +93,8 @@
   }
   
     function get_lib_mult(mult,i){
-    var score = questions[i].effect.lib
-    if(Math.abs(score) == 2){ return mult*score } else
-    if(Math.abs(score) == 1){
+    if(Math.abs(questions[i].effect.lib) == 2){ return mult*questions[i].effect.lib } else
+    if(Math.abs(questions[i].effect.lib) == 1){
         if(mult > 0){ return 2} else
         if(mult < 0){ return -2} else
         {return 0}
@@ -106,9 +103,8 @@
   }
   
     function get_cit_mult(mult,i){
-    var score = questions[i].effect.cit
-    if(Math.abs(score) == 2){ return mult*score } else
-    if(Math.abs(score) == 1){
+    if(Math.abs(questions[i].effect.cit) == 2){ return mult*questions[i].effect.cit } else
+    if(Math.abs(questions[i].effect.cit) == 1){
         if(mult > 0){ return 2} else
         if(mult < 0){ return -2} else
         {return 0}
